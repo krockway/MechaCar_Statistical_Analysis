@@ -27,10 +27,13 @@ lot_summary <- suspension_table %>% group_by(Manufacturing_Lot) %>% summarise(Me
 #t.test(log10(sample_table$Miles_Driven),mu=mean(log10(population_table$Miles_Driven))) 
 
 #Is PSI across all lots statistically different from the population mean of 1,500psi?
-t.test(??????$PSI,mu=mean(total_summary$PSI)) 
+t.test(suspension_table$PSI, mu=1500)
 
 #Is PSI across for Lot 1 statistically different from the population mean of 1,500psi?
+t.test(subset(suspension_table,Manufacturing_Lot == "Lot1")$PSI, mu=1500)
 
 #Is PSI across for Lot 2 statistically different from the population mean of 1,500psi?
+t.test(subset(suspension_table,Manufacturing_Lot == "Lot2")$PSI, mu=1500)
 
 #Is PSI across for Lot 3 statistically different from the population mean of 1,500psi?
+t.test(subset(suspension_table,Manufacturing_Lot == "Lot3")$PSI, mu=1500)
