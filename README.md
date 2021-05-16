@@ -17,9 +17,16 @@ Ground clearance has a significant impact on a vehicle's MPG performance.
 
 ## Summary Statistics on Suspension Coils
 
-and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
-
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+The total variance for all lots falls within the manufacturer's specifications of 100psi. 
+
+![Total Summary](https://github.com/krockway/MechaCar_Statistical_Analysis/blob/main/images/Deliverable2.1.png)
+
+However, when broken down by lot, Lot 3 is an outlier and well over the manufacturer's specifications.
+
+![Lot Summary](https://github.com/krockway/MechaCar_Statistical_Analysis/blob/main/images/Deliverable2.2.png)
+
 
 ## T-Tests on Suspension Coils, 
 then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
