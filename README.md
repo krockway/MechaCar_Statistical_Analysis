@@ -1,5 +1,11 @@
 # MechaCar_Statistical_Analysis
 
+## Overview of Project
+
+### Purpose
+
+The purpose of this analysis is to review production troubles for AutosRUs' newest prototype, the MechaCar.
+
 ## Linear Regression to Predict MPG
 
 To begin, we must set our hypotheses to answer if there is a linear relationship between MPG and the other 5 vehicle stats (vehicle weight, spoiler angle, ground clearance, AWD & vehicle length)?
@@ -67,19 +73,20 @@ Finally, for Lot 3 the p-value is again quite small (.04), indicating that we mu
 Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
 
 In your description, address the following questions:
+
 - What metric or metrics are you going to test?
 
-    In the next statistical study, I would recommend comparing safety ratings versus maintenance costs and vehicle costs.
+    In the next statistical study, I would recommend comparing safety ratings versus maintenance costs and vehicle costs, both for MechaCar and their competitors.
 - What is the null hypothesis or alternative hypothesis?
 
-    H0: Cars with higher safety ratings have no linear relationship with vehicle costs or maintenance costs.
-    
-    Ha: Cars with higher safety ratings have higher vehicle costs and maintenance costs.
+        H0: Cars with higher safety ratings have no linear relationship with vehicle costs or maintenance costs.
+
+        Ha: Cars with higher safety ratings have higher vehicle costs and maintenance costs.
 
 - What statistical test would you use to test the hypothesis? And why?
 
-    In order to test this comparison, I would use multiple linear regression. This will allow us to compare multiple predictor variables at once.
+    In order to test this comparison, I would use multiple linear regression. This will allow us to compare multiple predictor variables at once against the safety rating.
 
 - What data is needed to run the statistical test?
 
-    In order to complete this statistical test, we'll need access to vehicle costs and maintenance costs.
+    In order to complete this statistical test, we'll need access to vehicle safety ratings, vehicle costs and vehicle maintenance costs.
