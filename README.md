@@ -2,9 +2,9 @@
 
 ## Linear Regression to Predict MPG
 
-To begin, we must set our hypotheses to answer if there is a linear relationship between MPG and the other 5 vehicle stats (vehicle weight, spoiler angle, ground_clearance, AWD & vehicle length)?
+To begin, we must set our hypotheses to answer if there is a linear relationship between MPG and the other 5 vehicle stats (vehicle weight, spoiler angle, ground clearance, AWD & vehicle length)?
 
-    H0: There is no linear relationship between one or more of the 5 vehicle statistics & MPG; ie they cannot be used to predict MPG.
+    H0: There is no linear relationship between any of the 5 vehicle statistics & MPG; ie none can be used to predict MPG.
     Ha: There is a linear relationship between one or more of the 5 vehicle statistics & MPG; ie one or more can be used to predict MPG.
 
 Additionally, we'll use .05 percent as our significance level.
@@ -15,13 +15,15 @@ As seen in the output above, the linear regression model can successfully predic
 
 - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-Ground clearance and vehicle length have a significant impact on MPG, ie provide a non-random amount of variance.
+    Ground clearance and vehicle length have a significant impact on MPG, ie provide a non-random amount of variance.
 
 - Is the slope of the linear model considered to be zero? Why or why not?
-No, the slope of the linear model is not zero, because the ground clearance and vehicle length both have high, positive t-values. If the slope were zero, then the null hypothesis would be true.
+
+    No, the slope of the linear model is not zero, because the ground clearance and vehicle length both have high, positive t-values. If the slope were zero, then the null hypothesis would be true.
 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-The linear model predicts MPG of MechaCar prototypes moderately well, with 71% accuracy, as indicated by the r-squared value above.
+
+    The linear model predicts MPG of MechaCar prototypes moderately well, with 71% accuracy, as indicated by the r-squared value above.
 
 ## Summary Statistics on Suspension Coils
 
@@ -66,11 +68,18 @@ Write a short description of a statistical study that can quantify how the Mecha
 
 In your description, address the following questions:
 - What metric or metrics are you going to test?
-Cost vs vehicle length
+
+    In the next statistical study, I would recommend comparing safety ratings versus maintenance costs and vehicle costs.
 - What is the null hypothesis or alternative hypothesis?
-H0:
-HA:
+
+    H0: Cars with higher safety ratings have no linear relationship with vehicle costs or maintenance costs.
+    
+    Ha: Cars with higher safety ratings have higher vehicle costs and maintenance costs.
+
 - What statistical test would you use to test the hypothesis? And why?
-Linear regression
+
+    In order to test this comparison, I would use multiple linear regression. This will allow us to compare multiple predictor variables at once.
+
 - What data is needed to run the statistical test?
-Vehicle costs
+
+    In order to complete this statistical test, we'll need access to vehicle costs and maintenance costs.
